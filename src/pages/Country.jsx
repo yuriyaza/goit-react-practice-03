@@ -1,11 +1,11 @@
-import { Section, Container, CountryInfo, Loader } from 'components';
+import { Section, Container, CountryInfo } from 'components';
 import { useFetchCountry } from 'hooks/useFetchCountry';
 import { GoBackBtn } from '../components/GoBackBtn/GoBackBtn';
 import { useLocation } from 'react-router-dom';
 import { routes } from 'routes';
 
 export const Country = () => {
-  const { country, isLoading, error } = useFetchCountry();
+  const { country } = useFetchCountry();
   // console.log(country);
   const location = useLocation();
   // console.log(location);
